@@ -1,0 +1,8 @@
+#!/home/sabs/Downloads/upzet-django-admin-dashboard-template-2023-11-27-11-10-19-utc/Upzet_Django_v1.1.0/venv/bin/python3
+# -*- coding: utf-8 -*-
+import re
+import sys
+from pip._internal.cli.main import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())

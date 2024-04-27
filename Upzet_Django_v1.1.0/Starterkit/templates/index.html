@@ -1,0 +1,23 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block title %}Dashboard{% endblock title %}
+{% block extra_css %}
+        <!-- jvectormap -->
+        <link href="{% static 'libs/jqvmap/dist/jqvmap.min.css' %}" rel="stylesheet" />
+{% endblock extra_css %}
+{% block content %}
+            
+{% endblock content %}
+{% block extra_javascript %}
+        <!-- apexcharts js -->
+        <script src="{% static 'libs/apexcharts/dist/apexcharts.min.js' %}"></script>
+        
+        <!-- jquery.vectormap map -->
+        <script src="{% static 'libs/jqvmap/dist/jquery.vmap.min.js' %}"></script>
+        <script src="{% static 'libs/jqvmap/dist/maps/jquery.vmap.usa.js' %}"></script>
+        
+        <!-- Bootstrap Toasts Js -->
+        <script src="{% static 'js/pages/bootstrap-toasts.init.js' %}"></script>
+
+        <script src="{% static 'js/pages/dashboard.init.js' %}"></script>
+{% endblock extra_javascript %} 
